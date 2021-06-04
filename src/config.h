@@ -12,6 +12,7 @@ bool debug = true;
 #define VERSION "1.10"
 
 // For AP mode:
+String deviceName = "Crestliner_Minnkota";
 const char *ssid = "Crestliner_Minnkota";  // You will connect your phone to this Access Point
 const char *pw = "123456789"; // and this is the password
 IPAddress ip(192, 168, 4, 1); 
@@ -24,8 +25,7 @@ IPAddress netmask(255, 255, 255, 0);
 
 
 
-
-
+#define WIFI_CONNECT_TIMEOUT 10     // time to wait for STA mode
 #define NUM_COM   3                 // total number of COM Ports
 #define DEBUG_COM 0                 // debug output to COM0
 /*************************  COM Port 0 *******************************/
